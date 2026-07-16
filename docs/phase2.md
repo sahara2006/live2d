@@ -1,3 +1,10 @@
+### インストール
+
+早速ダウンロードしてみましょう。
+https://www.live2d.com/cubism/download/editor/
+
+今回の講習会では、free版のみで可能な範囲で作業を行います。
+
 ## 今回やること
 
 モデルに瞬きのモーションをつけていきます。
@@ -35,6 +42,8 @@ Live2D Cubism Editor を起動して、Free版を選択してください。
    メッシュをまとめて動かすことのできる変形パスを追加・変更できる。
    (https://md.trap.jp/uploads/upload_1f41ca9bc994f539feb6a3fdfc623431.png)
 
+<img src="./.vitepress/asset/display.png">
+
 ## 下準備
 
 ### いらない部分を非表示化しよう
@@ -49,3 +58,4 @@ Live2D Cubism Editor を起動して、Free版を選択してください。
 
 （右・左）瞳フォルダの**子ファイルのみ**
 をすべて選択(shift長押し+クリックで一括選択できます)して、インスペクタのクリッピングから（右・左）白目ファイルを選択してください。（下三角の部分をクリックすることで項目が表示されます。）
+<img src="./.vitepress/asset/clip.png">

@@ -4170,7 +4170,7 @@ const _sfc_main$s = /* @__PURE__ */ defineComponent({
   __name: "VPNavBarSearch",
   __ssrInlineRender: true,
   setup(__props) {
-    const VPLocalSearchBox = defineAsyncComponent(() => import("./VPLocalSearchBox.z1VMoGgl.js"));
+    const VPLocalSearchBox = defineAsyncComponent(() => import("./VPLocalSearchBox.p84_0kln.js"));
     const VPAlgoliaSearchBox = () => null;
     const { theme: theme2 } = useData();
     const loaded = ref(false);
@@ -5899,6 +5899,9 @@ const theme = {
     app.component("Badge", _sfc_main$14);
   }
 };
+const RawTheme = {
+  extends: theme
+};
 const ClientOnly = defineComponent({
   setup(_, { slots }) {
     const show = ref(false);
@@ -6162,7 +6165,7 @@ function resolveThemeExtends(theme2) {
   }
   return theme2;
 }
-const Theme = resolveThemeExtends(theme);
+const Theme = resolveThemeExtends(RawTheme);
 const VitePressApp = defineComponent({
   name: "VitePressApp",
   setup() {
