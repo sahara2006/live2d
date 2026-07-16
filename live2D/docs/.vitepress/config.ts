@@ -22,8 +22,8 @@ export default defineConfig({
           { text: 'Phase 1: Live2Dとは', link: '/phase1' },
           { text: 'Phase 2: 素材の下処理', link: '/phase2' },
           { text: 'Phase 3: メッシュ追加', link: '/phase3' },
-          { text: 'Phase 4: 完成編', link: '/phase4' },
-          { text: '発展課題集', link: '/optional' }
+          { text: 'Phase 4: メッシュ変形', link: '/phase4' },
+          { text: 'Phase 5: まとめ', link: '/phase5' }
         ]
       }
     ],
