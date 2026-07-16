@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/live2d/',
   title: "Live2D講習会",
   description: "一枚絵から作れるアニメーション",
   lang: 'ja-JP',  // 日本語対応

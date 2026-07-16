@@ -29,7 +29,7 @@ _sfc_main$14.setup = (props, ctx) => {
 function deserializeFunctions(r) {
   return Array.isArray(r) ? r.map(deserializeFunctions) : typeof r == "object" && r !== null ? Object.keys(r).reduce((t, n) => (t[n] = deserializeFunctions(r[n]), t), {}) : typeof r == "string" && r.startsWith("_vp-fn_") ? new Function(`return ${r.slice(7)}`)() : r;
 }
-const siteData = deserializeFunctions(JSON.parse('{"lang":"ja-JP","dir":"ltr","title":"Live2D講習会","description":"一枚絵から作れるアニメーション","base":"/","head":[],"router":{"prefetchLinks":true},"appearance":true,"themeConfig":{"nav":[{"text":"ホーム","link":"/"},{"text":"はじめに","link":"/phase1"}],"sidebar":[{"text":"演習","items":[{"text":"Phase 1: Live2Dとは","link":"/phase1"},{"text":"Phase 2: 素材の下処理","link":"/phase2"},{"text":"Phase 3: メッシュ追加","link":"/phase3"},{"text":"Phase 4: メッシュ変形","link":"/phase4"},{"text":"Phase 5: まとめ","link":"/phase5"}]}],"search":{"provider":"local"}},"locales":{},"scrollOffset":134,"cleanUrls":false}'));
+const siteData = deserializeFunctions(JSON.parse('{"lang":"ja-JP","dir":"ltr","title":"Live2D講習会","description":"一枚絵から作れるアニメーション","base":"/live2d/","head":[],"router":{"prefetchLinks":true},"appearance":true,"themeConfig":{"nav":[{"text":"ホーム","link":"/"},{"text":"はじめに","link":"/phase1"}],"sidebar":[{"text":"演習","items":[{"text":"Phase 1: Live2Dとは","link":"/phase1"},{"text":"Phase 2: 素材の下処理","link":"/phase2"},{"text":"Phase 3: メッシュ追加","link":"/phase3"},{"text":"Phase 4: メッシュ変形","link":"/phase4"},{"text":"Phase 5: まとめ","link":"/phase5"}]}],"search":{"provider":"local"}},"locales":{},"scrollOffset":134,"cleanUrls":false}'));
 function tryOnScopeDispose(fn) {
   if (getCurrentScope()) {
     onScopeDispose(fn);
@@ -1268,7 +1268,7 @@ function pathToFile(path) {
   pagePath = pagePath.replace(/\/$/, "/index");
   {
     if (inBrowser) {
-      const base = "/";
+      const base = "/live2d/";
       pagePath = sanitizeFileName(pagePath.slice(base.length).replace(/\//g, "_") || "index") + ".md";
       let pageHash = __VP_HASH_MAP__[pagePath.toLowerCase()];
       if (!pageHash) {
@@ -4170,7 +4170,7 @@ const _sfc_main$s = /* @__PURE__ */ defineComponent({
   __name: "VPNavBarSearch",
   __ssrInlineRender: true,
   setup(__props) {
-    const VPLocalSearchBox = defineAsyncComponent(() => import("./VPLocalSearchBox.BgJrjD7U.js"));
+    const VPLocalSearchBox = defineAsyncComponent(() => import("./VPLocalSearchBox.z1VMoGgl.js"));
     const VPAlgoliaSearchBox = () => null;
     const { theme: theme2 } = useData();
     const loaded = ref(false);
