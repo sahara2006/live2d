@@ -2,24 +2,20 @@
 layout: home # トップページ用のレイアウトを指定
 
 hero: # ページ上部のメインビジュアル部分
-  name: "Next.js入門ドキュメント" # 大きく表示されるサイト名
-  text: "Next.js入門のための演習教材" # サブタイトル
-  tagline: Next.jsに入門してみよう # キャッチコピー
+  name: "Live2D講習会" # 大きく表示されるサイト名
+  tagline: 一枚絵から作れるアニメーション # キャッチコピー
   actions: # CTAボタン
     - theme: brand # メインボタン（強調色）
       text: Phase 1から始める
       link: /phase1
-    - theme: alt # サブボタン（控えめな色）
-      text: GitHub
-      link: https://github.com/yuta-ishii-cm/next-app-task-manager
 
 features: # ページ下部のカード形式で並ぶ特徴紹介セクション
-  - title: Phase 1 - 基礎編
-    details: App Routerの仕組み、ファイルベースルーティング、Server/Client Componentの違いを理解する
+  - title: Phase 1 - Live2Dとは
+    details: Live2Dの基本的な内容について知る
     link: /phase1 # カードクリックで遷移するリンク先
     linkText: 詳しく見る # リンクテキスト（省略可）
-  - title: Phase 2 - UI構築編
-    details: コンポーネント設計、TypeScriptでの型定義、Tailwind CSSでカンバンボードUIを構築する
+  - title: Phase 2 - 前準備
+    details: ソフトと素材のダウンロードをする
     link: /phase2
     linkText: 詳しく見る
   - title: Phase 3 - データ操作編
